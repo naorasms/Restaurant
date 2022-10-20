@@ -114,6 +114,47 @@ ul{
 }
 
 
+/* X-Small Screen */
+
+@media (min-width: 576px) {
+  .container {
+  width: 568px;
+  }
+}
+
+/* Small Screen */
+
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+/* Medium Screen */
+
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+
+/* Large Screen */
+
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+
+/* X-Large Screen */
+
+@media (min-width: 1400px) {
+  .container {
+      width: 1295px;
+  }
+}
+
+
 
 /* end genaral */
 
@@ -131,7 +172,7 @@ body{
     font-family: 'Oleo Script Swash Caps', cursive;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 .text_fm_Oleo{
   font-family: 'Oleo Script Swash Caps', cursive;
@@ -206,15 +247,10 @@ display: block;
   border-top: 5px solid white;
 }
 
-@media (min-width: 961px ){
-  .contanier{
-    width: 1140px
-  }
-}
 
 @media (min-width: 768px ){
 
-  .contanier{
+  .container{
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
@@ -227,7 +263,7 @@ display: block;
     width: 18px;
   }
   .logo a{
-    width: 9rem;
+    width: 8rem;
     padding-left: 8px;
     font-weight: 700;
     font-size: 1.1rem;
@@ -278,7 +314,7 @@ display: block;
 
 
 @media (max-width: 767px ) {
-  .contanier{
+  .container{
       padding-left: 15px;
       padding-right: 15px;
       margin-right: auto;
@@ -409,8 +445,8 @@ display: block;
 }
 
 @media (min-width: 961px ){
-  .contanier{
-    width: 85%
+  .container{
+    /* width: 920px; */
   }
   .our__menu_list li a{
     font-size: 1rem !important;
@@ -418,7 +454,7 @@ display: block;
 }
 
 @media (min-width: 765px)and (max-width: 960px) {
-  .contanier{
+  .container{
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
@@ -477,9 +513,12 @@ display: block;
 /******************* start main****************** */
 
 @media (min-width: 767px) {
+  .slider_home{
+    padding-top: 50px;
+    padding-bottom: 95px;
+  }
 
   .main__content{
-    min-height: 100vh;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: repeat(2, 250px);
@@ -487,9 +526,7 @@ display: block;
   
   }
 }
-.slider_home{
-  padding-top: 50px;
-}
+
 .food__desc{
   grid-row: 1/3;
   align-self: center;
@@ -497,7 +534,7 @@ display: block;
 }
 .food__desc h3{
   margin-bottom: 20px;
-  font-size: 3.5rem;
+  font-size: 2.8rem;
 }
 .food__desc p{
   margin-top: 7px;
@@ -641,14 +678,17 @@ display: block;
 }
 /*========================== end slider ==========================*/
 
-.buttons_slider{
+
+.buttons_slider {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  top: -45px;
-  left: 55px;
+  position: absolute;
+  /* top: 0; */
+  /* left: 98px; */
   width: 571px;
   margin: 0 auto;
+  right: 50px;
+  bottom: 60px;
 }
 .buttons_slider .btn_left{
   width: 35px;
@@ -679,7 +719,7 @@ display: block;
     position: absolute;
 
     right: -99px;
-    bottom: 99px;
+    /* bottom: 99px; */
 }
   .food__desc {
     align-self: start;
@@ -693,9 +733,9 @@ display: block;
     width: 28vw;
   }
   .buttons_slider {
-    top: -80px;
-    left: -79px;
+    right: 85px;
     width: 516px;
+    /* bottom: -15px; */
 }
   .circle{
     left: 20%;
@@ -703,8 +743,8 @@ display: block;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .container {
-      width: 750px;
+  .container{
+      /* width: 750px; */
   }
   .food__desc {
     grid-row: 1/3;
@@ -717,7 +757,7 @@ display: block;
     margin-bottom: 0;
   }
   .food__desc p{
-    width: 30vw;
+    width: 15rem;
     /* opacity: .6; */
     font-size: 14px;
   }
@@ -739,8 +779,9 @@ display: block;
 }
   .food__img {
     position: absolute;
-    bottom: 2rem;
-    right: 0;
+    bottom: -3rem;
+    right: 164px;
+    /* margin: 0 auto; */
   }
   .food__img .dish{
     width: 220px;
@@ -749,8 +790,7 @@ display: block;
     /* margin-top: 10rem; */
   }
   .buttons_slider{
-    top: -80px;
-    left: -7px;
+    left: -145px;
     width: 516px;
   }
 
@@ -758,8 +798,8 @@ display: block;
 }
 
 @media (max-width: 767px) {
-  .container {
-      width: 750px;
+  .slider_home{
+    height: 100vh;
   }
   .food__desc{
     text-align: center;
@@ -779,10 +819,10 @@ display: block;
   }
   .big_circle{
     /* margin-right: -20rem; */
-    top: -610px;
+    top: -640px;
   }
   .circle{
-    bottom: -68%;
+    bottom: -70%;
     left: 14%;
   }
   .circle__item img {
@@ -813,14 +853,18 @@ display: block;
     height: 120px;
   }
   .food__img {
-    grid-row: span 2;
+    /* grid-row: span 2;
     align-self: end;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    /* outline: 1px solid; */
-    /* width: 80%; */
-    margin: 0 auto;
+    outline: 1px solid;
+    width: 80%;
+    margin: 0 auto; */
+
+  position: absolute;
+  right: 13px;
+  /* bottom: -52px; */
   }
   .food__img img{
     width: 170px;
@@ -829,15 +873,19 @@ display: block;
   }
   
   .buttons_slider {
-    top: -180px;
-    left: 15px;
-    width: 503px;
+    top: 75px;
+    /* left: 15px; */
+    width: 488px;
   }
 }
 
 @media (max-width: 576px) {
+
+  .slider_home{
+    height: unset;
+  }
   .container {
-    width: 568px;
+    /* width: 568px; */
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
@@ -845,7 +893,7 @@ display: block;
   }
   .food__desc h3 {
     margin-top: 2rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 0;
   }
   .food__desc h4{
@@ -854,7 +902,7 @@ display: block;
   .food__desc p{
     margin: 0 auto;
     max-width: 74vw;
-    min-width: 36ch;
+    min-width: 32ch;
     opacity: .6;
     font-size: 14px;
   }
@@ -862,6 +910,7 @@ display: block;
     text-align: center;
   }
   .big_circle {
+    position: fixed;
     text-align: center;
   }
   .big_circle .circle{
@@ -870,8 +919,8 @@ display: block;
 
   .food__img{
     max-width: 18rem;
-
     margin: 1.5rem auto;
+    position: unset;
   }
   .food__img .dish{
     width: 100%;
@@ -1002,7 +1051,7 @@ display: block;
   margin-top: 10px;
 }
 .card_content span{
- float: right;
+  float: right;
   background-color: var(--clr-green);
   padding: 6px 12px;
   border-radius: 9px;
@@ -1028,10 +1077,7 @@ display: block;
 }
 
 @media (max-width: 767px ) {
-  .slider_home{
-    padding-top: 0;
-  }
-  .contanier{
+  .container{
       padding-left: 15px;
       padding-right: 15px;
       margin-right: auto;
@@ -1058,7 +1104,7 @@ display: block;
 footer{
   background-color: #302F30;
 }
-footer .contanier{
+footer .container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 15px;

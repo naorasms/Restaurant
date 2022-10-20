@@ -93,10 +93,10 @@ btn_right.onclick= function() {
         title.innerHTML = "Fast Food";
         indx = 0;
     }
-    if(indx ==1){
-        bgClr.style.backgroundColor= "#FFE9B6";
-        title.style.color = "#FFB200";
-        title.innerHTML = "Fast Food";
+    if(indx == 1){
+        bgClr.style.backgroundColor= "#fedcd1";
+        title.style.color = "#EB7E5B";
+        title.innerHTML = "Desserts";
         // window.location.replace("fast.html")
         // indx = 0;
     }
